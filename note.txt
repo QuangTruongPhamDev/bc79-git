@@ -24,3 +24,10 @@ git push -u origin [tên nhánh hiện tại]
 git add -A 
 git commit -m " create home page html "
 git push
+
+
+-- Xem các nhánh đang có trong máy
+
+git branch
+
+
