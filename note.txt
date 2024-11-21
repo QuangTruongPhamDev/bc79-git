@@ -1,4 +1,4 @@
---- Đẩy code từ local lên remote
+--- Đẩy code từ local lên remote ---
 
 + repository local : source code trong máy tính
 
@@ -16,5 +16,11 @@ git remote add origin url-repo
 -- Đẩy lần đầu ( trên Github chưa có nhánh master )
 
 git add -A
-git comit -m " create home page page html "
+git commit -m " create home page html "
 git push -u origin [tên nhánh hiện tại]
+
+-- Đẩy lần 2 trở đi
+
+git add -A 
+git commit -m " create home page html "
+git push
