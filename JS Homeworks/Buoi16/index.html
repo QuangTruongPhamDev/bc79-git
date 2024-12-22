@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homeworks16</title>
+    <link rel="stylesheet" href="/bc79-git/JS Homeworks/Buoi16/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bài tập Array</h1>
+        <label for="numbers">Nhập vào số nguyên:</label>
+        <input type="text" id="numbers" placeholder="Nhập số nguyên">
+        <div id="vi-tri" style="display: none;">
+            <label for="index1">Nhập vào vị trí thứ nhất:</label>
+            <input type="text" id="index1" placeholder="Nhập vào vị trí 1">
+            <label for="index2">Nhập vào vị trí thứ 2:</label>
+            <input type="text" id="index2" placeholder="Nhập vào vị trí 2">
+        </div>
+        <div id="extra-input" style="display: none;">
+            <label for="real-numbers">Nhập vào số thực:</label>
+            <input type="text" id="real-numbers" placeholder="Nhập số thực">
+        </div>
+        <button onclick="getArray()">Thêm vào mảng</button>
+        <button onclick="sumPositiveNumbers()">Tính Tổng</button>
+        <button onclick="countPositiveNumbers()">Đếm số</button>
+        <button onclick="findSmallestNumber()">Tìm số nhỏ nhất</button>
+        <button onclick="findSmallestPositiveNumber()">Tìm số dương nhỏ nhất</button>
+        <button onclick="findLastEvenNumber()">Tìm số chẵn cuối cùng</button>
+        <button onclick="swapArrayPositions()">Đổi chỗ</button>
+        <button onclick="sortArrayAscending()">Sắp xếp tăng dần</button>
+        <button onclick="findFirstPrimeNumber()">Tìm số nguyên tố đầu tiên</button>
+        <button onclick="countIntegersInRealArray()">Đếm số nguyên</button>
+        <button onclick="comparePositiveAndNegative()">So sánh số lượng số âm và dương</button>
+        <div id="result" class="output"></div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
