@@ -33,7 +33,7 @@ let renderDSNV = (DSNV) => {
                 <td>${nv.email}</td>
                 <td>${nv.ngayLam}</td>
                 <td>${nv.chucVu}</td>
-                <td>${nv.tongLuong().toLocaleString()}</td>
+                <td>${nv.tongLuong().toLocaleString()} VNĐ</td>
                 <td>${nv.loaiNV()}</td>
                 <td>
                     <button class="btn btn-warning btn-sm" onclick="suaNhanVien('${
