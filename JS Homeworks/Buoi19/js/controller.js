@@ -4,9 +4,9 @@ let layThongTinNhanVien = () => {
   let email = document.getElementById("email").value;
   let matKhau = document.getElementById("password").value;
   let ngayLam = document.getElementById("datepicker").value;
-  let luongCB = document.getElementById("luongCB").value * 1;
+  let luongCB = document.getElementById("luongCB").value;
   let chucVu = document.getElementById("chucvu").value;
-  let gioLam = document.getElementById("gioLam").value * 1;
+  let gioLam = document.getElementById("gioLam").value;
 
   let nhanVien = new NhanVien(
     taiKhoan,
