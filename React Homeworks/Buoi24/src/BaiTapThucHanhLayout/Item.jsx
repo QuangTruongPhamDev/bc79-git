@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Content() {
+export default function Item() {
   return (
     // Page Content
     <section class="pt-4">

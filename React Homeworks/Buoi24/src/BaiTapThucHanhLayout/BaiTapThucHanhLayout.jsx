@@ -1,15 +1,13 @@
 import React from "react";
-import NavBar from "./NavBar";
 import Header from "./Header";
-import Content from "./Content";
+import Body from "./Body";
 import Footer from "./Footer";
 
 export default function BaiTapThucHanhLayout() {
   return (
     <div>
-      <NavBar />
       <Header />
-      <Content />
+      <Body />
       <Footer />
     </div>
   );
