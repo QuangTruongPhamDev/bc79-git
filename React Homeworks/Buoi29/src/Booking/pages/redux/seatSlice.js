@@ -25,9 +25,14 @@ const seatSlice = createSlice({
       state.confirmedSeats = [...state.selectedSeats];
       state.selectedSeats = [];
     },
+    resetAll: (state) => {
+      state.selectedSeats = [];
+      state.confirmedSeats = [];
+    },
   },
 });
 
-export const { selectSeat, removeSeat, confirmSelection } = seatSlice.actions;
+export const { selectSeat, removeSeat, confirmSelection, resetAll } =
+  seatSlice.actions;
 
 export default seatSlice.reducer;
