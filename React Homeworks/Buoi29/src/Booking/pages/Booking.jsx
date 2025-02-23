@@ -1,6 +1,11 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { confirmSelection, removeSeat, selectSeat } from "./redux/seatSlice";
+import {
+  confirmSelection,
+  removeSeat,
+  resetAll,
+  selectSeat,
+} from "./redux/seatSlice";
 
 export default function Booking() {
   const dispatch = useDispatch();
@@ -33,9 +38,10 @@ export default function Booking() {
     }
   };
 
-  // Bắt đầu cho phép chọn ghế sau khi nhập thông tin hợp lệ
+  // Bắt đầu cho phép chọn ghế sau khi nhập thông tin hợp lệ và reset tất cả thông tin chọn ghế trước đó
   const handleStartSelection = () => {
     if (name.trim() !== "" && numSeats > 0) {
+      dispatch(resetAll());
       setSelectionEnable(true);
     } else {
       alert("Vui lòng nhập tên và số ghế ngồi bạn muốn chọn!");
