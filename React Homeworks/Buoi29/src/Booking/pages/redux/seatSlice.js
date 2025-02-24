@@ -17,7 +17,7 @@ const seatSlice = createSlice({
       }
     },
     removeSeat: (state, action) => {
-      state.confirmedSeats = state.selectedSeats.filter(
+      state.selectedSeats = state.selectedSeats.filter(
         (seat) => seat != action.payload
       );
     },
